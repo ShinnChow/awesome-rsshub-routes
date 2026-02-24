@@ -47,11 +47,15 @@ function doRequest(url, headers, timeout = 30000) {
   });
 }
 
-// 检查单个 URL 是否可访问
+// 检查单个 URL 是否可访问（带统一重试机制）
 async function checkUrl(url, timeout = 30000) {
   const defaultHeaders = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
     'Accept': 'application/rss+xml, application/xml, text/xml, */*'
+  };
+  const retryHeaders = {
+    'User-Agent': defaultHeaders['User-Agent'],
+    'Accept': '*/*'
   };
 
   let { statusCode, error } = await doRequest(url, defaultHeaders, timeout);
@@ -61,31 +65,34 @@ async function checkUrl(url, timeout = 30000) {
     return { valid: true, statusCode: null, error: null };
   }
 
-  // 415/406 通常是 CDN/WAF 对内容协商的误拦截，用更宽松的请求头重试一次
-  if (statusCode === 415 || statusCode === 406) {
-    const retryHeaders = {
-      'User-Agent': defaultHeaders['User-Agent'],
-      'Accept': '*/*'
-    };
-    const retry = await doRequest(url, retryHeaders, timeout);
-    if (retry.statusCode && retry.statusCode < 400) {
-      return { valid: true, statusCode: retry.statusCode, error: null };
-    }
-    // 重试仍失败，但 415/406 在 GET 请求中大概率是 WAF 误拦而非真正失效，视为可用
-    return { valid: true, statusCode: statusCode, error: null };
+  // 判断首次请求是否成功
+  const isValid = (code) => code && (code < 400 || code === 403 || code === 405);
+
+  if (isValid(statusCode)) {
+    return { valid: true, statusCode, error: null };
   }
 
-  if (error) {
-    return { valid: false, statusCode: null, error: error };
+  // 404 是明确的资源不存在，不重试
+  if (statusCode === 404) {
+    return { valid: false, statusCode, error: 'HTTP 404' };
   }
 
-  // 2xx, 3xx 和部分 4xx (403/405 可能是反爬但实际可用) 都算成功
-  // 只有 404, 500+ 才算真的失效
-  const valid = statusCode < 400 || statusCode === 403 || statusCode === 405;
+  // 其他所有失败情况（4xx/5xx/网络错误/超时）统一重试一次
+  await delay(1000);
+  const retry = await doRequest(url, retryHeaders, timeout);
+
+  if (retry.error && retry.error.includes('certificate')) {
+    return { valid: true, statusCode: null, error: null };
+  }
+
+  if (isValid(retry.statusCode)) {
+    return { valid: true, statusCode: retry.statusCode, error: null };
+  }
+
   return {
-    valid,
-    statusCode: statusCode,
-    error: valid ? null : `HTTP ${statusCode}`
+    valid: false,
+    statusCode: retry.statusCode || statusCode,
+    error: retry.error || `HTTP ${retry.statusCode || statusCode}`
   };
 }
 
