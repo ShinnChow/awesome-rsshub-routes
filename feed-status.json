@@ -1,7 +1,7 @@
 {
-  "checkTime": "2026-03-02 12:12:59 (北京时间)",
-  "total": 69,
-  "valid": 69,
+  "checkTime": "2026-03-06 14:09:40 (北京时间)",
+  "total": 72,
+  "valid": 72,
   "invalid": 0,
   "successRate": "100.0%",
   "feeds": [
@@ -87,6 +87,13 @@
       "url": "https://www.jiqizhixin.com/rss",
       "valid": true,
       "statusCode": 302,
+      "error": null
+    },
+    {
+      "name": "Simon Willison's Blog",
+      "url": "https://simonwillison.net/atom/everything/",
+      "valid": true,
+      "statusCode": 200,
       "error": null
     },
     {
@@ -331,7 +338,7 @@
       "name": "Python Blog",
       "url": "https://blog.python.org/feeds/posts/default",
       "valid": true,
-      "statusCode": 301,
+      "statusCode": 200,
       "error": null
     },
     {
@@ -426,6 +433,13 @@
       "error": null
     },
     {
+      "name": "Meta Engineering",
+      "url": "https://engineering.fb.com/feed/",
+      "valid": true,
+      "statusCode": 200,
+      "error": null
+    },
+    {
       "name": "JavaScript Weekly",
       "url": "https://javascriptweekly.com/rss/",
       "valid": true,
@@ -447,10 +461,17 @@
       "error": null
     },
     {
+      "name": "ByteByteGo",
+      "url": "https://blog.bytebytego.com/feed",
+      "valid": true,
+      "statusCode": 200,
+      "error": null
+    },
+    {
       "name": "Nature",
       "url": "https://www.nature.com/nature.rss",
       "valid": true,
-      "statusCode": 303,
+      "statusCode": 200,
       "error": null
     },
     {
