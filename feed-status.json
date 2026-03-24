@@ -1,7 +1,7 @@
 {
-  "checkTime": "2026-03-23 12:27:44 (北京时间)",
-  "total": 72,
-  "valid": 72,
+  "checkTime": "2026-03-24 10:40:56 (北京时间)",
+  "total": 75,
+  "valid": 75,
   "invalid": 0,
   "successRate": "100.0%",
   "feeds": [
@@ -69,6 +69,13 @@
       "error": null
     },
     {
+      "name": "Hacker News OpenClaw",
+      "url": "https://hnrss.org/newest?q=OpenClaw",
+      "valid": true,
+      "statusCode": 200,
+      "error": null
+    },
+    {
       "name": "Hugging Face 博客",
       "url": "https://huggingface.co/blog/feed.xml",
       "valid": true,
@@ -80,6 +87,20 @@
       "url": "https://stability.ai/news?format=rss",
       "valid": true,
       "statusCode": 301,
+      "error": null
+    },
+    {
+      "name": "OpenClaw Releases",
+      "url": "https://github.com/openclaw/openclaw/releases.atom",
+      "valid": true,
+      "statusCode": 200,
+      "error": null
+    },
+    {
+      "name": "OpenClaw Commits",
+      "url": "https://github.com/openclaw/openclaw/commits/main.atom",
+      "valid": true,
+      "statusCode": 200,
       "error": null
     },
     {
