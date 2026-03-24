@@ -67,6 +67,7 @@ AI company blogs, research papers, tools and products.
 | arXiv NLP              | `https://rss.arxiv.org/rss/cs.CL` | NLP papers   |
 | Hacker News AI         | `https://hnrss.org/newest?q=AI`   | HN AI posts  |
 | Hacker News LLM        | `https://hnrss.org/newest?q=LLM`  | HN LLM posts |
+| Hacker News OpenClaw   | `https://hnrss.org/newest?q=OpenClaw` | HN OpenClaw posts |
 
 #### AI Tools and Products
 
@@ -74,6 +75,8 @@ AI company blogs, research papers, tools and products.
 | ----------------- | -------------------------------------- | ------------------------ |
 | Hugging Face Blog    | `https://huggingface.co/blog/feed.xml`         | Open-source AI community          |
 | Stability AI         | `https://stability.ai/news?format=rss`         | Stable Diffusion                   |
+| OpenClaw Releases    | `https://github.com/openclaw/openclaw/releases.atom` | OpenClaw release updates      |
+| OpenClaw Commits     | `https://github.com/openclaw/openclaw/commits/main.atom` | Main branch activity         |
 | Synced               | `https://www.jiqizhixin.com/rss`               | Top Chinese AI media               |
 | Simon Willison's Blog | `https://simonwillison.net/atom/everything/`  | LLM insights, Django co-creator    |
 

@@ -17,8 +17,11 @@
       <outline type="rss" text="arXiv 计算机视觉" title="arXiv 计算机视觉" xmlUrl="https://rss.arxiv.org/rss/cs.CV"/>
       <outline type="rss" text="Hacker News AI" title="Hacker News AI" xmlUrl="https://hnrss.org/newest?q=AI"/>
       <outline type="rss" text="Hacker News LLM" title="Hacker News LLM" xmlUrl="https://hnrss.org/newest?q=LLM"/>
+      <outline type="rss" text="Hacker News OpenClaw" title="Hacker News OpenClaw" xmlUrl="https://hnrss.org/newest?q=OpenClaw"/>
       <outline type="rss" text="Hugging Face 博客" title="Hugging Face 博客" xmlUrl="https://huggingface.co/blog/feed.xml"/>
       <outline type="rss" text="Stability AI" title="Stability AI" xmlUrl="https://stability.ai/news?format=rss"/>
+      <outline type="rss" text="OpenClaw Releases" title="OpenClaw Releases" xmlUrl="https://github.com/openclaw/openclaw/releases.atom"/>
+      <outline type="rss" text="OpenClaw Commits" title="OpenClaw Commits" xmlUrl="https://github.com/openclaw/openclaw/commits/main.atom"/>
       <outline type="rss" text="机器之心" title="机器之心" xmlUrl="https://www.jiqizhixin.com/rss"/>
       <outline type="rss" text="Simon Willison's Blog" title="Simon Willison's Blog" xmlUrl="https://simonwillison.net/atom/everything/"/>
     </outline>

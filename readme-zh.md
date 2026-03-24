@@ -70,6 +70,7 @@
 | arXiv NLP | `https://rss.arxiv.org/rss/cs.CL` | 自然语言处理 |
 | Hacker News AI | `https://hnrss.org/newest?q=AI` | HN AI 相关 |
 | Hacker News LLM | `https://hnrss.org/newest?q=LLM` | HN 大模型相关 |
+| Hacker News OpenClaw | `https://hnrss.org/newest?q=OpenClaw` | HN 上的 OpenClaw 讨论 |
 
 #### AI 工具 & 产品
 
@@ -77,6 +78,8 @@
 |------|----------|------|
 | Hugging Face 博客 | `https://huggingface.co/blog/feed.xml` | 开源 AI 社区 |
 | Stability AI | `https://stability.ai/news?format=rss` | Stable Diffusion |
+| OpenClaw Releases | `https://github.com/openclaw/openclaw/releases.atom` | OpenClaw 版本发布 |
+| OpenClaw Commits | `https://github.com/openclaw/openclaw/commits/main.atom` | 主分支开发动态 |
 | 机器之心 | `https://www.jiqizhixin.com/rss` | 国内顶尖 AI 媒体 |
 | Simon Willison 博客 | `https://simonwillison.net/atom/everything/` | LLM 洞察，Django 联合创始人 |
 
