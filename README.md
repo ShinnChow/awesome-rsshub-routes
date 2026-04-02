@@ -1,26 +1,34 @@
-# Awesome RSSHub Routes [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+# RSS Feed Directory
 
 [![GitHub stars](https://img.shields.io/github/stars/JackyST0/awesome-rsshub-routes?style=social)](https://github.com/JackyST0/awesome-rsshub-routes)
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
+[![Check Feeds](https://github.com/JackyST0/awesome-rsshub-routes/actions/workflows/check-feeds.yml/badge.svg)](https://github.com/JackyST0/awesome-rsshub-routes/actions/workflows/check-feeds.yml)
 
 <p align="center">
-  <img src="assets/banner.svg" alt="Awesome RSSHub Routes" width="100%">
+  <img src="assets/banner.svg" alt="RSS Feed Directory" width="100%">
 </p>
 
 [中文](./readme-zh.md) | **English**
 
-> Curated RSS feeds and RSSHub routes for efficient reading.
+> A practical directory of official RSS feeds and RSSHub routes, with online browsing, OPML import, and feed health checks.
 
 🌐 **Browse Online**: **https://jackyst0.github.io/awesome-rsshub-routes/** - Search, filter by category, and copy with one click
+📥 **One-Click Import**: Download [feeds.opml](./feeds.opml) and import it into your RSS reader
+✅ **Feed Health**: Automated checks track feed availability and surface broken links in [GitHub Issues](https://github.com/JackyST0/awesome-rsshub-routes/issues)
 
-This project curates the **most practical and commonly used** RSS feeds, including:
+This repository is designed as a usable feed directory rather than a traditional curated-links list. It focuses on helping you discover, copy, and import high-signal feeds quickly, including:
 - 📡 **Official RSS** - Native RSS feeds provided by websites
 - 🔧 **RSSHub Routes** - RSS feeds generated via [RSSHub](https://github.com/DIYgod/RSSHub)
 
-📥 **One-Click Import**: Download [feeds.opml](./feeds.opml) and import it into your RSS reader to subscribe to all curated feeds!
+## Quick Start
+
+1. Browse the online directory and filter feeds by category.
+2. Import [feeds.opml](./feeds.opml) into your RSS reader.
+3. Copy official feed URLs or assemble RSSHub routes as needed.
 
 ## Contents
 
+- [Quick Start](#quick-start)
 - [Official RSS Feeds](#official-rss-feeds)
   - [AI](#ai)
   - [Tech Communities](#tech-communities)

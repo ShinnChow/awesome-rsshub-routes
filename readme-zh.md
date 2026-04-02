@@ -1,29 +1,36 @@
-# 🎯 Awesome RSSHub Routes [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+# 🎯 RSS 订阅源目录
 
 [![GitHub stars](https://img.shields.io/github/stars/JackyST0/awesome-rsshub-routes?style=social)](https://github.com/JackyST0/awesome-rsshub-routes)
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 [![Check Feeds](https://github.com/JackyST0/awesome-rsshub-routes/actions/workflows/check-feeds.yml/badge.svg)](https://github.com/JackyST0/awesome-rsshub-routes/actions/workflows/check-feeds.yml)
 
 <p align="center">
-  <img src="assets/banner.svg" alt="Awesome RSSHub Routes" width="100%">
+  <img src="assets/banner.svg" alt="RSS 订阅源目录" width="100%">
 </p>
 
 **中文** | [English](./README.md)
 
-> 🔥 精选 RSS 订阅源推荐，包含 RSSHub 路由和官方 RSS，让你的阅读更高效！
+> 实用的 RSS 订阅源目录，收录官方 RSS 与 RSSHub 路由，支持在线浏览、OPML 导入和可用性检查。
 
 🌐 **在线浏览**：**https://jackyst0.github.io/awesome-rsshub-routes/** - 支持分类筛选、搜索、一键复制
+📥 **一键导入**：下载 [feeds.opml](./feeds.opml) 文件，导入到你的 RSS 阅读器
+✅ **健康检查**：定期检测订阅源可用性，并在 [GitHub Issues](https://github.com/JackyST0/awesome-rsshub-routes/issues) 汇总状态
 
-本项目收集整理了**最实用、最常用**的 RSS 订阅源，包括：
+这个仓库更偏向“可直接使用的订阅目录”，而不是传统的链接清单。它专注于帮你更快地发现、复制和导入高信噪比订阅源，包括：
 - 📡 **官方 RSS** - 网站自带的 RSS 订阅
 - 🔧 **RSSHub 路由** - 通过 [RSSHub](https://github.com/DIYgod/RSSHub) 生成的 RSS
 
-📥 **一键导入**：下载 [feeds.opml](./feeds.opml) 文件，导入到你的 RSS 阅读器即可订阅全部精选源！
+## 🚀 快速开始
+
+1. 先在在线目录里按分类筛选和搜索。
+2. 把 [feeds.opml](./feeds.opml) 导入 RSS 阅读器。
+3. 按需复制官方 RSS 地址，或拼接 RSSHub 路由使用。
 
 ---
 
 ## 📚 目录
 
+- [🚀 快速开始](#-快速开始)
 - [📡 官方 RSS 订阅](#-官方-rss-订阅)
   - [🤖 AI 专题](#-ai-专题)
   - [💻 技术社区](#-技术社区)
