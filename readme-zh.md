@@ -1,11 +1,11 @@
-# 🎯 RSS 订阅源目录
+# 🎯 Awesome RSSHub Routes
 
 [![GitHub stars](https://img.shields.io/github/stars/JackyST0/awesome-rsshub-routes?style=social)](https://github.com/JackyST0/awesome-rsshub-routes)
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 [![Check Feeds](https://github.com/JackyST0/awesome-rsshub-routes/actions/workflows/check-feeds.yml/badge.svg)](https://github.com/JackyST0/awesome-rsshub-routes/actions/workflows/check-feeds.yml)
 
 <p align="center">
-  <img src="assets/banner.svg" alt="RSS 订阅源目录" width="100%">
+  <img src="assets/banner.svg" alt="Awesome RSSHub Routes" width="100%">
 </p>
 
 **中文** | [English](./README.md)
